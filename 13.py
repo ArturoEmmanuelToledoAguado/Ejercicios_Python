@@ -1,0 +1,5 @@
+Edad=int(input("Ingrese su edad: "))
+Art=int(input("Ingrese la cantidad de articulos comprados: "))
+print("Tu edad: ",Edad)
+print("Articulos comprados: ",Art)
+print((Edad>=18 and Art>1))
