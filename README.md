@@ -1,5 +1,5 @@
-#Sección 1
-###Entrada/salida de datos - Variables - Tipos de datos 
+# Sección 1
+### Entrada/salida de datos - Variables - Tipos de datos 
 1. Escribí un programa que solicite al usuario que ingrese su nombre. El nombre se debe almacenar en una variable llamada nombre. A continuación se debe mostrar en pantalla el texto “Ahora estás en la matrix, [usuario]”, donde “[usuario]” se reemplazará por el nombre que el usuario haya ingresado.
 2. Escribí un programa que solicite al usuario ingresar un número con decimales y almacenalo en una variable. A continuación, el programa debe solicitar al usuario que ingrese un número entero y guardarlo en otra variable. En una tercera variable se deberá guardar el resultado de la suma de los dos números ingresados por el usuario. Por último, se debe mostrar en pantalla el texto “El resultado de la suma es [suma]”, donde “[suma]” se reemplazará por el resultado de la operación.
 3. Escribí un programa que solicite al usuario dos números y los almacene en dos variables. En otra variable, almacená el resultado de la suma de esos dos números y luego mostrá ese resultado en pantalla.
@@ -51,8 +51,8 @@ n1=input("Tu nombre: ")
 n2=input("Otro nombre: ")
 print((n1[0]==n2[0])or(n1[len(n1)-1]==n2[len(n2)-1]))
 ~~~
-#Sección 2
-###Bloques - Selección - Repeticiones
+# Sección 2
+### Bloques - Selección - Repeticiones
 17. Escribí un programa que, dado un número entero, muestre su valor absoluto. Recordá que, para los números positivos su valor absoluto es igual al número (el valor absoluto de 52 es 52), mientras que, para los negativos, su valor absoluto es el número multiplicado por -1 (el valor absoluto de -52 es 52).
 ~~~
 num=float(input("Numero: "))
@@ -358,8 +358,8 @@ while True:
         cont=0
         cont1=0
 ~~~
-#Sección 3
-###Funciones 
+# Sección 3
+### Funciones 
 41. Escribí una función llamada esPar que reciba como parámetro un número y retorne True si el número es par ó False si es impar. Utilizar esta función en un programa que solicite al usuario el ingreso de 10 números y que luego muestre, por separado, la suma de todos los pares y la suma de todos los impares.
 ~~~
 def esPar(num):
