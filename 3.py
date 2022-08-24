@@ -1,0 +1,7 @@
+Decimal=float(input("Ingrese un numero decimal: "))
+Entero=int(input("Ingrese un numero entero: "))
+print("Primer numero: ",Decimal)
+print("Segundo numero: ",Entero)
+print("Suman: ",Decimal+Entero)
+Numero=float(input("Ingrese un numero: "))
+print("Multiplicacion de la suma por  el ultimo numero: ",(Decimal+Entero)*Numero)

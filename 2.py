@@ -1,0 +1,5 @@
+Decimal=float(input("Ingrese un numero decimal: "))
+Entero=int(input("Ingrese un numero entero: "))
+print("Primer numero: ",Decimal)
+print("Segundo numero: ",Entero)
+print("El resultado de la suma es: ",Decimal+Entero)

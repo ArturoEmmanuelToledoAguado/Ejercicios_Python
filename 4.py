@@ -1,0 +1,5 @@
+Km=float(input("Ingrese la cantidad de Km recorridos: "))
+Lt=float(input("Ingrese la  cantidad de litros de combustible consumidos: "))
+print("Kilometros recorridos: ",Km)
+print("Litros de combustible gastados: ",Lt)
+print("El consumo por kilometro es de: ",Km/Lt)

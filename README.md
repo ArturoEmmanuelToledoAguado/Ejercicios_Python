@@ -1,16 +1,73 @@
 # Sección 1
 ### Entrada/salida de datos - Variables - Tipos de datos 
 1. Escribí un programa que solicite al usuario que ingrese su nombre. El nombre se debe almacenar en una variable llamada nombre. A continuación se debe mostrar en pantalla el texto “Ahora estás en la matrix, [usuario]”, donde “[usuario]” se reemplazará por el nombre que el usuario haya ingresado.
+~~~
+nombre=input("Ingrese su nombre: ")
+print("Ahora estas enla matriz ", nombre)
+~~~
 2. Escribí un programa que solicite al usuario ingresar un número con decimales y almacenalo en una variable. A continuación, el programa debe solicitar al usuario que ingrese un número entero y guardarlo en otra variable. En una tercera variable se deberá guardar el resultado de la suma de los dos números ingresados por el usuario. Por último, se debe mostrar en pantalla el texto “El resultado de la suma es [suma]”, donde “[suma]” se reemplazará por el resultado de la operación.
+~~~
+Decimal=float(input("Ingrese un numero decimal: "))
+Entero=int(input("Ingrese un numero entero: "))
+print("Primer numero: ",Decimal)
+print("Segundo numero: ",Entero)
+print("El resultado de la suma es: ",Decimal+Entero)
+~~~
 3. Escribí un programa que solicite al usuario dos números y los almacene en dos variables. En otra variable, almacená el resultado de la suma de esos dos números y luego mostrá ese resultado en pantalla.
 A continuación, el programa debe solicitar al usuario que ingrese un tercer número, el cual se debe almacenar en una nueva variable. Por último, mostrá en pantalla el resultado de la multiplicación de este nuevo número por el resultado de la suma anterior.
+~~~
+Decimal=float(input("Ingrese un numero decimal: "))
+Entero=int(input("Ingrese un numero entero: "))
+print("Primer numero: ",Decimal)
+print("Segundo numero: ",Entero)
+print("Suman: ",Decimal+Entero)
+Numero=float(input("Ingrese un numero: "))
+print("Multiplicacion de la suma por  el ultimo numero: ",(Decimal+Entero)*Numero)
+~~~
 4. Escribí un programa que solicite al usuario ingresar la cantidad de kilómetros recorridos por una motocicleta y la cantidad de litros de combustible que consumió durante ese recorrido. Mostrar el consumo de combustible por kilómetro.
-5. Escribí un programa que solicite al usuario el ingreso de una temperatura en escala Fahrenheit (debe permitir decimales) y le muestre el equivalente en grados Celsius. La fórmula de conversión que se usa para este cálculo es: _Celsius = (5/9) * (Fahrenheit-32)_
+~~~
+Km=float(input("Ingrese la cantidad de Km recorridos: "))
+Lt=float(input("Ingrese la  cantidad de litros de combustible consumidos: "))
+print("Kilometros recorridos: ",Km)
+print("Litros de combustible gastados: ",Lt)
+print("El consumo por kilometro es de: ",Km/Lt)
+~~~
+5. Escribí un programa que solicite al usuario el ingreso de una temperatura en escala Fahrenheit (debe permitir decimales) y le muestre el equivalente en grados Celsius. La fórmula de conversión que se usa para este cálculo es: _Celsius = (5/9) * (Fahrenheit-32)
+~~~
+F=float(input("Ingresa una temperatura expresada en Farenheit: "))
+print("La temperatura en C° es: ", (5/9)*(F-32))
+~~~
 6. Escribí un programa que solicite al usuario ingresar tres números para luego mostrarle el promedio de los tres.
+~~~
+a=float(input("Ingrese un numero a promediar: "))
+b=float(input("Ingrese un numero a promediar: "))
+c=float(input("Ingrese un numero a promediar: "))
+print("El promedio es: ",(a+b+c)/3)
+~~~
 7. Escribí un programa que solicite al usuario un número y le reste el 15%, almacenando todo en una única variable. A continuación, mostrar el resultado final en pantalla.
+~~~
+num=float(input("Ingrese un numero: "))
+num -= num*.15
+print("Descontando el 15% queda: ",num)
+~~~
 8. Escribí un programa que solicite al usuario el ingreso de dos palabras, las cuales se guardarán en dos variables distintas. A continuación, almacená en una variable la concatenación de la primera palabra, más un espacio, más la segunda palabra. Mostrá este resultado en pantalla.
-9. Escribí un programa que solicite al usuario el ingreso de un texto y almacene ese texto en una variable. A continuación, mostrar en pantalla la primera letra del texto ingresado. Luego, solicitar al usuario que ingrese un número positivo menor a la cantidad de caracteres que tiene el texto que ingresó (por ejemplo, si escribió la palabra “HOLA”, tendrá que ser un número entre 0 y 4) y almacenar este número en una variable llamada indice.
+~~~
+p1=input("Ingrese una palabra ")
+p2=input("Ingrese otra palabra: ")
+print("Primera palabra: ",p1)
+print("Segunda palabra: ",p2)
+print(p1+" "+p2)
+~~~
+9.  Escribí un programa que solicite al usuario el ingreso de un texto y almacene ese texto en una variable. A continuación, mostrar en pantalla la primera letra del texto ingresado. Luego, solicitar al usuario que ingrese un número positivo menor a la cantidad de caracteres que tiene el texto que ingresó (por ejemplo, si escribió la palabra “HOLA”, tendrá que ser un número entre 0 y 4) y almacenar este número en una variable llamada indice.
 Mostrar en pantalla el carácter del texto ubicado en la posición dada por indice.
+~~~
+palabra=input("Ingrese un texto\n")
+print("El caracter en primer lugar es: ",palabra[0])
+tam=len(palabra)
+print("Ingresa un numero positivo menor a ",tam)
+indice=int(input())
+print("El caracter en esa posicion es: ",palabra[indice])
+~~~
 10. Escribí un programa que solicite al usuario que ingrese cuántos shows musicales ha visto en el último año y almacene ese número en una variable. A continuación mostrar en pantalla un valor de verdad (True o False) que indique si el usuario ha visto más de 3 shows.
 ~~~
 shows=int(input("Cuantos Shows musicales ha visto en el ultimo año: "))
@@ -70,6 +127,7 @@ if num<num2:
 else:
     print(num, "es mayor")
 ~~~
+<br></br>
 19. Escribí un programa que solicite al usuario una letra y, si es una vocal, muestre el mensaje “Es vocal”. Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle que no se puede procesar el dato.
 ~~~
 vocal=input("Letra: ")

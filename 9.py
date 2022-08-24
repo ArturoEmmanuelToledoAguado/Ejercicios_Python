@@ -1,0 +1,6 @@
+palabra=input("Ingrese un texto\n")
+print("El caracter en primer lugar es: ",palabra[0])
+tam=len(palabra)
+print("Ingresa un numero positivo menor a ",tam)
+indice=int(input())
+print("El caracter en esa posicion es: ",palabra[indice])

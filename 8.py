@@ -1,0 +1,5 @@
+p1=input("Ingrese una palabra ")
+p2=input("Ingrese otra palabra: ")
+print("Primera palabra: ",p1)
+print("Segunda palabra: ",p2)
+print(p1+" "+p2)
